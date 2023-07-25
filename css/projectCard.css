@@ -10,7 +10,7 @@
 }
 
 .project-card {
-    width: 28%;
+    width: 32%;
     border: 0.4em solid #61213C;
     border-radius: 1em;
     padding: 3em 1em;
@@ -50,7 +50,6 @@
 
 .project-card-languages > i {
     font-size: 3em;
-    /* color: #61213C; */
     text-align: center;
     padding: 0 0.5em;
     margin: 0.5em 0;
