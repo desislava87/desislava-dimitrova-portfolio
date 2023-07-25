@@ -1,0 +1,13 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+https://fontawesome.com/v5/search?q=php&o=r
+
+<i class="fab fa-php"></i>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3-alt"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-github"></i>
+
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-google"></i>
+<i class="fas fa-mail-bulk"></i>
+<i class="fab fa-linkedin"></i>
