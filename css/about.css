@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.about-img {
+    width: 20%;
+}
+
+.about-img > img {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.about > p {
+    width: 50%;
+    font-family: Lugrasimo, sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+}
