@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+</head>
+<body>
+    <header>
+        <section class="top-bar">
+            <span>DESISLAVA DIMITROVA</span>
+            <span class="adress">VARNA, BULGARIA, EAST EUROPA</span>
+        </section>
+        <section class="bottom-bar">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">ABOUT</a>
+                    </li>                    
+                    <li>
+                        <a href="./projects.html">PROJECTS</a>
+                    </li>
+                    <!-- <li>
+                        <a href="./biography.html">BIOGRAPHY</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="about">
+        <section class="about-img">
+            <img src="./images/Des black and white.jpg" alt="">
+        </section>
+        <div class="container">
+            <div class="os-phrases" id="os-phrases">
+                <h2>To be a developer.</h2>
+                <h2>A dream,</h2>
+                <h2>enthusiasm,</h2>
+                <h2>desire and</h2>
+                <h2>many hours of work...</h2>
+                <h2>This is me, Desislava Dimitrova.</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="social-links">
+            <span><a href="https://www.facebook.com/des.tihomirova/" target="_blank"><i class="fab fa-facebook-square"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/desislava-dimitrova-970204227/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
+        </section>
+        <section class="copyright">&copy HAILY DESIGN, 2023</section>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+        
+        
+    <script>
+        $(document).ready(function(){
+            $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+        })
+    </script>
+
+
+    <script>
+
+        // Modal Setup
+        var modal = document.getElementById('modal');
+
+        var modalClose = document.getElementById('modal-close');
+        modalClose.addEventListener('click', function() { 
+        modal.style.display = "none";
+        });
+
+        // global handler
+        document.addEventListener('click', function (e) { 
+        if (e.target.className.indexOf('project-card-img') !== -1) {
+            var img = e.target;
+            var modalImg = document.getElementById("modal-content");
+            var captionText = document.getElementById("modal-caption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        }
+        });
+    </script>
+</body>
+</html>
