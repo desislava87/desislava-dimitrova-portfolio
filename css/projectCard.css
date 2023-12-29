@@ -94,3 +94,24 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+@media screen and (max-device-width: 920px) { 
+
+    .project-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-conteiner {
+        width: 100%;
+    }
+
+    .project-card-img {
+        width: auto;
+        height: auto;
+    }
+
+    .project-card-languages > i {
+        font-size: 2.00em;
+    }
+}

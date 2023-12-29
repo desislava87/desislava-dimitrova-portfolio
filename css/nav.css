@@ -49,3 +49,15 @@ header {
     text-decoration: none;
     color: #61213C;
 }
+
+@media (width <= 1000px) {
+
+    .adress {
+        display: none;
+    }
+
+    a.logo {
+        display: none;
+    }
+}
+
